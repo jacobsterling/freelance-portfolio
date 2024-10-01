@@ -53,8 +53,6 @@ const projectsData = [
   { name: 'Machine Learning', value: 10 },
 ]
 
-
-
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']
 
 export default function Home() {
@@ -84,7 +82,7 @@ export default function Home() {
 
   const sections = [
     {
-      title: "Trading Algorithms and Quantitative Analysis",
+      title: "Quantitative Analysis",
       description: "A passion for AI-driven trading algorithms and quantitative analysis. Specializing in developing trading strategies and indepth statistical analysis on financial markets.",
       service: "Accurate mathmatical modelling and financial analysis",
       chart: (
@@ -112,8 +110,8 @@ export default function Home() {
       githubLink: "https://github.com/jacobsterling/quantative-analysis"
     },
     {
-      title: "SpaceX Falcon 9 First Stage Landing Prediction",
-      description: "Implement machine learning models for risk analysis with in-depth results driven reporting.",
+      title: "In-depth Reporting And Data Representation",
+      description: "Implemented machine learning models for risk analysis on the SpaceX Falcon 9 to predict the first stage landing success rate. Generated a report with detailed analysis and visualizations.",
       service: "Operational optimization and Report generation",
       chart: (
         <ResponsiveContainer width="100%" height={500}>
@@ -130,8 +128,8 @@ export default function Home() {
       githubLink: "https://github.com/jacobsterling/data-science/tree/main/spacex_project/Falcon9_First_Stage_Landing_Prediction_Report.ipynb"
     },
     {
-      title: "Housing Price Prediction",
-      description: "Gain company insights with predictive modeling, helping you make informed decisions.",
+      title: "Predictive Modeling",
+      description: "Housing Price Prediction using Linear Regression. Using multiple parameters to predict the price of houses in King County, USA",
       service: "Data Analysis and Forecasting",
       chart: (
         <ResponsiveContainer width="100%" height={300}>
@@ -148,8 +146,8 @@ export default function Home() {
       githubLink: "https://github.com/jacobsterling/data-science/blob/main/House_Sales_in_King_Count_USA.ipynb"
     },
     {
-      title: "Credit Card Fraud Detection",
-      description: "",
+      title: "Classification Modeling",
+      description: "Credit Card Fraud Detection using Decision Trees. Using data from Kaggle to train a model to detect fraudulent credit card transactions.",
       service: "Financial Fraud Detection and Prevention Systems",
       chart: (
         <ResponsiveContainer width="100%" height={300}>
@@ -179,8 +177,8 @@ export default function Home() {
       githubLink: "https://github.com/jacobsterling/data-science/blob/main/Classification_Tree_Credit_Card_Fraud_Detection.ipynb"
     },
     {
-      title: "Cancer Cell Classification using SVM",
-      description: "Cancer cell classification using Support Vector Machine (SVM) algorithms. My expertise in medical data analysis and SVM model development aids in early cancer detection and treatment planning.",
+      title: "More Classification using SVM",
+      description: "Cancer cell classification using Support Vector Machine (SVM) algorithms. Expertise in training and testing AI models to aid in data driven decision making.",
       service: "Medical Diagnosis Support Systems",
       chart: (
         <div className="relative w-full h-64">
@@ -196,7 +194,7 @@ export default function Home() {
     },
     {
       title: "Weather Classification and Rainfall Prediction in Australia",
-      description: "",
+      description: "Weather Classification and Rainfall Prediction in Australia using SVM. Expertise in training and testing AI models to aid in data driven decision making.",
       service: "Environmental Data Analysis and Forecasting",
       githubLink: "https://github.com/jacobsterling/data-science/blob/main/Classification_Rain_Fall.ipynb"
     },
@@ -204,6 +202,18 @@ export default function Home() {
       title: "Web3 Browser Game Development",
       description: "Experience in full-stack development, combining cutting-edge web technologies with blockchain integration, systems design, integration and development",
       service: "Web3 Game Development and Blockchain Integration",
+      chart: (
+        <ResponsiveContainer width="100%" height={300}>
+          <div className="relative w-full h-full">
+            <Image
+              src="/project-images/Wizard.png"
+              alt="Web3 Game Development"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+        </ResponsiveContainer>
+      ),
       githubLink: "https://github.com/jacobsterling/delt"
     },
   ]
@@ -224,13 +234,13 @@ export default function Home() {
           <TabsContent value="home">
             <Card className="mb-8">
               <CardContent className="pt-6">
-                <div className="flex flex-col md:flex-row gap-6">
-                  <div className="md:w-2/3">
+                <div className="flex flex-col md:flex-row gap-6 items-center">
+                  <div className="md:w-2/3 flex flex-col">
                     <p className="text-lg">
                       Adaptable and results-driven Data Engineer with a passion for Data Science. Expert in developing workflows, process optimization, and integrating cutting-edge technologies. Proficient in Python, Typescript, Rust, SQL, and C++, with a solid foundation in mathematical modeling from a Physics with Astrophysics degree and trading algorithm development. Skilled in leveraging AI tools and automation to enhance productivity, streamline processes, and drive innovation. Committed to using advanced data analysis, AI prompting, and programming expertise to support strategic decision-making and deliver impactful results.
                     </p>
                   </div>
-                  <div className="md:w-1/3">
+                  <div className="md:w-1/3 flex flex-col">
                     <div className="text-center mb-4">
                       <h3 className="text-lg font-semibold">Project Distribution</h3>
                     </div>

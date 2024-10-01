@@ -7,7 +7,7 @@ export function Header() {
             <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
                 <div>
                     <h1 className="text-3xl font-bold text-gray-900 dark:text-white">Jacob Sterling</h1>
-                    <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">Freelance Data Engineer/Analyst | Innovative Problem Solver</p>
+                    <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">Freelance Data Scientist | Innovative Problem Solver | Specializing in Process Automation And Application Development | Experienced in AI and Machine Learning Algorithms</p>
                 </div>
                 <div className="flex items-center space-x-4">
                     <Link href="https://github.com/jacobsterling" target="_blank" rel="noopener noreferrer">
