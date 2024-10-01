@@ -58,7 +58,7 @@ const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']
 export default function Home() {
   const [activeTab, setActiveTab] = useState('home')
   const [activeSection, setActiveSection] = useState(0)
-  const sectionRefs = useRef([])
+  const sectionRefs = useRef<(HTMLElement | null)[]>([])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -261,7 +261,9 @@ export default function Home() {
             {sections.map((section, index) => (
               <section
                 key={index}
-                ref={el => sectionRefs.current[index] = el}
+                ref={(el: HTMLElement | null) => {
+                  if (el) sectionRefs.current[index] = el;
+                }}
                 className={`min-h-screen flex items-center justify-center p-8 ${activeSection === index ? 'opacity-100' : 'opacity-50'
                   } transition-opacity duration-500`}
               >
