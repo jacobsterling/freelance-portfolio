@@ -2,18 +2,25 @@ import { Button } from '@/components/ui/button';
 import { ArrowUp, ArrowDown } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
-export function Footer({ sectionRefs, activeSection, activeTab }) {
-    const [isLastSection, setIsLastSection] = useState(false);
+interface FooterProps {
+    sectionRefs: React.RefObject<(HTMLElement | null)[]>;
+    activeSection: number;
+    activeTab: string;
+}
 
+export function Footer({ sectionRefs, activeSection, activeTab }: FooterProps) {
+    const [isLastSection, setIsLastSection] = useState(false);
     useEffect(() => {
-        setIsLastSection(activeSection === sectionRefs.length - 1);
+        if (sectionRefs.current) {
+            setIsLastSection(activeSection === sectionRefs.current.length - 1);
+        }
     }, [activeSection, sectionRefs]);
 
     const scrollToNextSection = () => {
         if (isLastSection) {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         } else {
-            const nextSection = sectionRefs[activeSection + 1];
+            const nextSection = sectionRefs.current?.[activeSection + 1];
             if (nextSection) {
                 nextSection.scrollIntoView({ behavior: 'smooth' });
             }

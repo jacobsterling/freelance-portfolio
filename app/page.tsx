@@ -387,9 +387,8 @@ export default function Home() {
           </TabsContent>
         </Tabs>
       </main>
-
       <Footer
-        sectionRefs={sectionRefs.current}
+        sectionRefs={sectionRefs}
         activeSection={activeSection}
         activeTab={activeTab}
       />
