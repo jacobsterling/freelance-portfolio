@@ -68,7 +68,7 @@ export default function Home() {
       const tags = sectionRefs.current
 
       for (let i = 0; i < tags.length; i++) {
-        const tag = tags[i]
+        const tag = tags[i] as HTMLElement; // Explicitly cast to HTMLElement
         if (tag.offsetTop < pageBottom && tag.offsetTop + tag.offsetHeight > pageTop) {
           setActiveSection(i)
           break
