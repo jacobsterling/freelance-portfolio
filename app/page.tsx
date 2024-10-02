@@ -350,7 +350,7 @@ export default function Home() {
                         />
                         <YAxis tickFormatter={(value) => Math.round(value).toString()} />
                         <Tooltip />
-                        <Bar dataKey="value" fill="#8884d8" />
+                        <Bar dataKey="value" fill="#0f172a" />
                       </BarChart>
                     </ResponsiveContainer>
                   </div>
