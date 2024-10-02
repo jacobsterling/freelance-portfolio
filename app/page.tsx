@@ -12,6 +12,7 @@ import { SkillsList } from '@/components/portfolio/SkillsList'
 import Image from 'next/image';
 import Link from 'next/link';
 import { Github } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 
 
 const dataTechnologies = [
@@ -483,8 +484,25 @@ export default function Home() {
                   <CardDescription>University of Dundee, Scotland | Sept 2017 to July 2021</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p><strong>Dissertation:</strong> Analyzed X-Ray Emission from Young Stars using Python for advanced model development.</p>
                   <p><strong>Key Courses:</strong> Computational Astrophysics • Quantum Mechanics • Mathematics and Mechanics.</p>
+                  <p><strong>Dissertation:</strong> Analyzed X-Ray Emission from Young Stars using Python for advanced model development.</p>
+                  <div className="mt-4">
+                    <Button
+                      onClick={() => window.open('/Project_Dissertation.pdf', '_blank')}
+                      variant="outline"
+                    >
+                      View Dissertation PDF
+                    </Button>
+                  </div>
+                  <div className="mt-4 aspect-[16/9] w-full">
+                    <iframe
+                      src="/Project_Dissertation.pdf"
+                      width="100%"
+                      height="100%"
+                      style={{ border: "none" }}
+                      title="Dissertation PDF"
+                    />
+                  </div>
                 </CardContent>
               </Card>
 
