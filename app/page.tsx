@@ -46,6 +46,16 @@ const otherTools = [
   { name: 'PowerBi', value: 85 },
 ]
 
+const softSkills = [
+  { name: 'Problem-Solving', value: 90 },
+  { name: 'Adaptability', value: 90 },
+  { name: 'Critical Thinking', value: 90 },
+  { name: 'Communication', value: 80 },
+  { name: 'Leadership', value: 80 },
+  { name: 'Teamwork', value: 70 },
+]
+
+
 const programmingLanguages = [
   { name: 'Python', value: 95 },
   { name: 'SQL', value: 90 },
@@ -505,6 +515,9 @@ export default function Home() {
           </TabsContent>
 
           <TabsContent value="skills">
+            <div className="mt-6">
+              <SkillsList skills={softSkills} title="Soft Skills" />
+            </div>
             <div className="mt-6">
               <SkillsList skills={programmingLanguages} title="Programming Languages" />
             </div>
