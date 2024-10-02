@@ -322,15 +322,19 @@ export default function Home() {
                 <div className="flex flex-col md:flex-row gap-6 items-center">
                   <div className="md:w-2/3 flex flex-col">
                     <p className="text-lg mb-4">
-                      Adaptable and results-driven Data Scientist with hands-on experience in Machine Learning (ML), Full-stack web development, and Data Engineering. Expert in developing workflows, process optimization, and integrating cutting-edge technologies.
+                      Adaptable and results-driven Data Scientist with hands-on experience in Machine Learning, Full-stack web development, and Data Engineering. Expert in developing workflows, process optimization, and integrating cutting-edge technologies.
                     </p>
 
                     <p className="text-lg mb-4">
                       Showcasing 3 years of data analysis experience with Python, and a solid foundation in mathematical modeling from a Physics with Astrophysics degree. Skilled in leveraging AI and ML tools in automation to enhance productivity, streamline processes, and drive innovation.
                     </p>
 
-                    <p className="text-lg">
+                    <p className="text-lg mb-4">
                       Committed to using advanced data analysis and application development expertise to support strategic decision-making and deliver impactful results.
+                    </p>
+
+                    <p className="text-lg">
+                      Let’s connect to explore how my expertise can help drive your next project or initiative forward.
                     </p>
                   </div>
                   <div className="md:w-1/3 flex flex-col">
