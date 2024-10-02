@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Jacob Sterling - Data Scientist & Developer",
-  description: "Portfolio of Jacob Sterling, showcasing data science projects and application development",
+  description: "Freelance portfolio of Jacob Sterling, showcasing data science projects and application development",
 };
 
 export default function RootLayout({
