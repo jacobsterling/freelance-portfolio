@@ -3,24 +3,26 @@ import Link from 'next/link';
 
 export function Header() {
     return (
-        <header className="bg-slate-900 shadow sticky top-0 z-10">
-            <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-                <div>
-                    <h1 className="text-3xl font-bold text-white">Jacob Sterling</h1>
-                    <p className="mt-1 text-sm text-gray-300">Freelance Data Scientist | Data Solutions and Application Development | Specializing in Process Automation</p>
+        <header className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-800 shadow-sm">
+            <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
+                <Link href="/" className="text-2xl font-bold text-gray-800 dark:text-white">
+                    Jacob Sterling
+                </Link>
+                <div className="flex space-x-6">
+                    <Link href="https://github.com/jacobsterling" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">
+                        <Github className="h-6 w-6" />
+                        <span className="sr-only">GitHub</span>
+                    </Link>
+                    <Link href="https://linkedin.com/in/jacobsterling" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">
+                        <Linkedin className="h-6 w-6" />
+                        <span className="sr-only">LinkedIn</span>
+                    </Link>
+                    <Link href="mailto:jacob.sterling@example.com" className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white">
+                        <Mail className="h-6 w-6" />
+                        <span className="sr-only">Email</span>
+                    </Link>
                 </div>
-                <div className="flex items-center space-x-4">
-                    <Link href="https://github.com/jacobsterling" target="_blank" rel="noopener noreferrer">
-                        <Github className="h-6 w-6 text-gray-300 hover:text-white" />
-                    </Link>
-                    <Link href="https://www.linkedin.com/in/jsterling0171/" target="_blank" rel="noopener noreferrer">
-                        <Linkedin className="h-6 w-6 text-gray-300 hover:text-white" />
-                    </Link>
-                    <Link href="mailto:sterling0171@gmail.com">
-                        <Mail className="h-6 w-6 text-gray-300 hover:text-white" />
-                    </Link>
-                </div>
-            </div>
+            </nav>
         </header>
     );
 }
