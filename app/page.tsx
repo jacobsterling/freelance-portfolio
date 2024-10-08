@@ -47,7 +47,7 @@ const BackgroundAnimation = () => {
 export default function Home() {
   const [activeTab, setActiveTab] = useState("home")
   const sectionRefs = useRef<(HTMLElement | null)[]>([])
-
+  const [, setActiveSection] = useState(0)
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col">
       <BackgroundAnimation />
@@ -147,18 +147,18 @@ export default function Home() {
                                 <p className="text-gray-600 dark:text-gray-300 mb-4">
                                   Implemented machine learning models to predict the success rate of SpaceX Falcon 9 first stage landings.
                                 </p>
-                                <Link href="#" className="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center">
+                                <Link href="#" className="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center" onClick={() => { setActiveTab("projects"); setActiveSection(5); }}>
                                   View Project <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
                               </CardContent>
                             </Card>
                             <Card>
                               <CardContent className="p-6">
-                                <h3 className="text-xl font-semibold mb-2">Housing Price Prediction</h3>
+                                <h3 className="text-xl font-semibold mb-2">ML AssistedTrading Algorithms</h3>
                                 <p className="text-gray-600 dark:text-gray-300 mb-4">
-                                  Developed a predictive ML model to estimate house prices based on multiple key features.
+                                  Developed multiple trading algorithms using a combination of technical analysis and machine learning models to predict cryptocurrency prices from order book data.
                                 </p>
-                                <Link href="#" className="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center">
+                                <Link href="#" className="text-blue-600 dark:text-blue-400 hover:underline inline-flex items-center" onClick={() => { setActiveTab("projects"); setActiveSection(0); }}>
                                   View Project <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
                               </CardContent>
